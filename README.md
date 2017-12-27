@@ -8,7 +8,7 @@ Client Side:
 - [x]  Bundle up 2 values and operation into an object
 - [x]  Send object to the server via POST
 . . . (server side stuff now)
-- [ ] GET request for results of calculation
+- [x] GET request for results of calculation
 - [ ] Display results of calculation on DOM (history list)
 - [ ] Clear button functions
 
@@ -16,5 +16,5 @@ Client Side:
 Server Side:
 - [x] Set up server
 - [x] Set up POST for the object coming from client
-- [ ] Set up modules for addition, subtraction, multiplication, and division
-- [ ] Set up GET for object to be sent back to client
+- [x] Set up modules for addition, subtraction, multiplication, and division
+- [x] Set up GET for object to be sent back to client

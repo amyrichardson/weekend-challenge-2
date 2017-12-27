@@ -37,9 +37,20 @@ function getInput() {
     data: objectToSend,
     success: function(response){
       console.log('back from server!: ' + response);
+      displayResults();
     }
   });
 } //end getInput
+
+function displayResults() {
+  $.ajax({
+    method: "GET",
+    url: "/calculation",
+    success: function(response){
+      console.log(response);
+    }
+  });
+}
 
 function resetOperation(){
   console.log('reset button was clicked!');
