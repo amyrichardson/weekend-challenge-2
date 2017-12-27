@@ -4,8 +4,8 @@ Client Side:
 - [x] History list on HTML
 - [x] Add clear button to reset
 - [x]  Accurately takes in button click
-- [ ]  Accurately takes in the values from input fields
-- [ ]  Bundle up 2 values and operation into an object
+- [x]  Accurately takes in the values from input fields
+- [x]  Bundle up 2 values and operation into an object
 - [ ]  Send object to the server via POST
 . . . (server side stuff now)
 - [ ] GET request for results of calculation
