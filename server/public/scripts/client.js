@@ -31,6 +31,14 @@ function getInput() {
   } //end else
   let objectToSend = new Operation (numOne, numTwo, operation);
   console.log(objectToSend);
+  $.ajax({
+    method: "POST",
+    url: "/operation",
+    data: objectToSend,
+    success: function(response){
+      console.log('back from server!: ' + response);
+    }
+  });
 } //end getInput
 
 function resetOperation(){
