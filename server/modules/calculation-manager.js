@@ -32,9 +32,14 @@ function unpackObject (operationObject) {
     return resultObject;
 }
 
+function reset () {
+  calculationsArray = [ ];
+  return calculationsArray;
+} //end reset
 
 
 module.exports = {
   unpackObject: unpackObject,
-  calculationsArray: calculationsArray
+  calculationsArray: calculationsArray,
+  reset: reset
 };

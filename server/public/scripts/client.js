@@ -54,6 +54,9 @@ function getResults() {
 } //end displayResults
 
 function displayResults(resultsArray) {
+    // if (resultsArray.length == 0){
+    //   $('ul').empty();
+    // }//end if
     for (let i = 0; i < resultsArray.length; i++) {
     let operation = resultsArray[i].operation;
     let numOne = resultsArray[i].numOne;
@@ -71,11 +74,14 @@ function displayResults(resultsArray) {
   } //end for loop
 } //end displayResults
 
-
-
-
-
 function resetOperation(){
   console.log('reset button was clicked!');
-
+  // $.ajax({
+  //   method: "GET",
+  //   url: "/reset",
+  //   success: function(response){
+  //     console.log('back from reset with: ', response);
+  //     displayResults(response);
+  //   } //end success
+  // }); //end get request
 } //end resetOperation
