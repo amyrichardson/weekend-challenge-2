@@ -3,8 +3,8 @@ Client Side:
 - [x]  Buttons on html for types of operation
 - [x] History list on HTML
 - [x] Add clear button to reset
+- [x]  Accurately takes in button click
 - [ ]  Accurately takes in the values from input fields
-- [ ]  Accurately takes in button click
 - [ ]  Bundle up 2 values and operation into an object
 - [ ]  Send object to the server via POST
 . . . (server side stuff now)
