@@ -1,8 +1,10 @@
 //bring in dependencies
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
+
+const app = express();
 const calcManage = require('./modules/calculation-manager');
+
 //middleware
 app.use(express.static('server/public')); //bring in static files
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,7 +24,7 @@ app.get('/reset', function(req, res){
   res.send(calcManage.reset());
 }); //end get request
 //set up server
-const port = 6400;
+const port = process.env.PORT || 6400;
 app.listen(port, function(){
   console.log('server up on ' + port);
-});
+}); //end listen
